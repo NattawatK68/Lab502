@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter user name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Note Title"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter note title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Note Type"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgNoteType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbTextNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Text Note" />
+
+            <RadioButton
+                android:id="@+id/rbChecklistNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checklist" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvContentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Content (For Checklist, use comma to separate)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter content" />
+
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Note" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="BACK" />
+
+        <TextView
+            android:id="@+id/tvDisplayNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="8dp"
+            android:background="#f0f0f0"
+            android:text="Note will be displayed here" />
+
+    </LinearLayout>
+</ScrollView>
